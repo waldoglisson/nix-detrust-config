@@ -38,16 +38,17 @@
   }: {
     nixosConfigurations = {
       nixos = let
-        username = "erpu";
+        username = "waldo";
         specialArgs = {inherit username;};
       in
         nixpkgs.lib.nixosSystem {
           inherit specialArgs;
-          system = "aarch64-linux";
+          # system = "aarch64-linux";
+          system = "x86_64-linux";
 
           modules = [
-            ./hosts/nixos
-            ./users/${username}/nixos.nix
+            ./hosts/waldo-nixos
+            # ./users/${username}/nixos.nix
 
             home-manager.nixosModules.home-manager
             {
