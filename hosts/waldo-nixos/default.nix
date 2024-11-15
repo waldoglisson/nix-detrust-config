@@ -8,7 +8,7 @@
   imports =
     [
       # Include the configuration and the results of the hardware scan.
-      ../../modules/configuration.nix
+      ./configuration.nix
       
       ../../modules/system.nix
       # ../../modules/i3.nix
