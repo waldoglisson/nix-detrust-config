@@ -10,7 +10,7 @@
 
     # ../../home/fcitx5
     # ../../home/i3
-    # ../../home/programs
+    ../../home/programs
     # ../../home/rofi
     # ../../home/shell
   ];

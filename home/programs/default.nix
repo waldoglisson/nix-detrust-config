@@ -1,9 +1,9 @@
 {
   imports = [
-    ./browsers.nix
+    # ./browsers.nix
     ./common.nix
-    ./git.nix
-    ./media.nix
-    ./xdg.nix
+    # ./git.nix
+    # ./media.nix
+    # ./xdg.nix
   ];
 }

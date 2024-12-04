@@ -16,9 +16,9 @@
     htop
 
     # misc
-    libnotify
-    wineWowPackages.wayland
-    xdg-utils
+    # libnotify
+    # wineWowPackages.wayland
+    # xdg-utils
     graphviz
 
     # productivity
@@ -31,10 +31,14 @@
     docker-compose
     kubectl
 
+    go 
+    buf 
+
     nodejs
     nodePackages.npm
     nodePackages.pnpm
     yarn
+    pnpm
 
     # db related
     dbeaver-bin
@@ -50,36 +54,36 @@
       extraConfig = "mouse on";
     };
 
-    bat = {
-      enable = true;
-      config = {
-        pager = "less -FR";
-        theme = "catppuccin-mocha";
-      };
-      themes = {
-        # https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme
-        catppuccin-mocha = {
-          src = catppuccin-bat;
-          file = "Catppuccin-mocha.tmTheme";
-        };
-      };
-    };
+    # bat = {
+    #   enable = true;
+    #   config = {
+    #     pager = "less -FR";
+    #     theme = "catppuccin-mocha";
+    #   };
+    #   themes = {
+    #     # https://raw.githubusercontent.com/catppuccin/bat/main/Catppuccin-mocha.tmTheme
+    #     catppuccin-mocha = {
+    #       src = catppuccin-bat;
+    #       file = "Catppuccin-mocha.tmTheme";
+    #     };
+    #   };
+    # };
 
-    btop.enable = true; # replacement of htop/nmon
-    eza.enable = true; # A modern replacement for ‘ls’
-    jq.enable = true; # A lightweight and flexible command-line JSON processor
-    ssh.enable = true;
-    aria2.enable = true;
+    # btop.enable = true; # replacement of htop/nmon
+    # eza.enable = true; # A modern replacement for ‘ls’
+    # jq.enable = true; # A lightweight and flexible command-line JSON processor
+    # ssh.enable = true;
+    # aria2.enable = true;
 
-    skim = {
-      enable = true;
-      enableZshIntegration = true;
-      defaultCommand = "rg --files --hidden";
-      changeDirWidgetOptions = [
-        "--preview 'exa --icons --git --color always -T -L 3 {} | head -200'"
-        "--exact"
-      ];
-    };
+    # skim = {
+    #   enable = true;
+    #   enableZshIntegration = true;
+    #   defaultCommand = "rg --files --hidden";
+    #   changeDirWidgetOptions = [
+    #     "--preview 'exa --icons --git --color always -T -L 3 {} | head -200'"
+    #     "--exact"
+    #   ];
+    # };
   };
 
   services = {
