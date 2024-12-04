@@ -38,7 +38,7 @@
     nodePackages.npm
     nodePackages.pnpm
     yarn
-    pnpm
+    # pnpm
 
     # db related
     dbeaver-bin
